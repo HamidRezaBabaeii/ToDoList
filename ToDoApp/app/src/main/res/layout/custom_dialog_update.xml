@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView_update_checklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Update Check List"
+        android:textColor="@color/light_green"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_update_checklist">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/update_textView_customDialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/dark_green"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/update_editText_customDialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:hint="Enter Name"
+                android:textColor="@color/dark_green"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/update_textView_customDialog_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Description"
+                android:textColor="@color/dark_green"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/update_editText_customDialog_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:hint="Enter Description ... "
+                android:inputType="textPersonName"
+                android:textColor="@color/dark_green"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/update_send_btn_customDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/light_green"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_add_mainAc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_action_add_green_xxxhdpi"
+        app:backgroundTint="@color/white"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="40dp"
+        app:tint="@color/dark_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/backgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/green_background" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_home_mainAc"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.6"
+                    android:background="@null"
+                    android:src="@drawable/ic_action_home"
+                    app:tint="@color/dark_green" />
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/imageButton_menu_mainAc"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_gravity="top|left"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:background="@null"-->
+<!--                    android:src="@drawable/ic_action_menu"-->
+<!--                    app:tint="@color/dark_green" />-->
+
+                <TextView
+                    android:id="@+id/textview_date_mainAc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="cursive"
+                    android:rotationX="25"
+                    android:text="TODAY 1400/08/09"
+                    android:gravity="center"
+                    android:textColor="@color/dark_green"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_add_mainAc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        <LinearLayout
+            android:id="@+id/checklist_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            />
+    </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

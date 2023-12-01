@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spinner_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Items_create">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_add_Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Create New Item "
+            android:textColor="@color/dark_green"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_customDialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/dark_green"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editText_customDialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:hint="Enter Name"
+                android:textColor="@color/dark_green"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_customDialog_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Description"
+                android:textColor="@color/dark_green"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editText_customDialog_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:hint="Enter Description ... "
+                android:inputType="textPersonName"
+                android:textColor="@color/dark_green"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_itemCr_priority"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Priority"
+                android:textColor="@color/dark_green"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spinner_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/Priority"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_itemCr_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Category"
+                android:textColor="@color/dark_green"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/Category"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/calender_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+
+                    android:src="@drawable/ic_action_date_range"
+                    app:tint="@color/light_green" />
+
+                <Spinner
+                    android:id="@+id/spinner_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:entries="@array/date"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/watch_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+
+                    android:src="@drawable/ic_action_more_time"
+                    app:tint="@color/light_green" />
+
+                <Spinner
+                    android:id="@+id/spinner_Time_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="20"
+                    android:entries="@array/Hours"
+                    android:textAlignment="center"/>
+
+                <Spinner
+                    android:id="@+id/spinner_Time_minute"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="20"
+                    android:entries="@array/Minutes"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/cancel_btn_customDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/light_green"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/send_btn_customDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/light_green"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
